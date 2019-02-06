@@ -1,0 +1,79 @@
+body{
+    margin: o; 
+
+}
+#main{
+    display:grid;
+    /* define as colunas e linhas, tem que ser a mesma quantidade de colunas por linha */
+    grid-template-areas: 'header header header'
+                          'nav nav aside'
+                          'section section aside'
+                          'footer footer footer';
+                          /* tamanho das linhas */
+    grid-auto-rows: 10vw 15vw 20vw 15vw;     
+      /*espaço da margem */
+    grid-gap: 10px;
+    /* espaço entre linhas  */
+    grid-row-gap: 10px;
+    /* espaço entre colunas */
+    grid-column-gap: 10px;
+}
+
+
+nav{
+    align-items: center;
+    grid-area: nav;
+    background-color: purple;
+    display:flex;
+    justify-content:  space-around;
+}
+
+aside{
+    grid-area: aside;
+    background-color: mediumseagreen;
+}
+
+section{
+    grid-area: section;
+    background-color: magenta;
+}
+
+footer{
+    grid-area: footer;
+    background-color: sandybrown;
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header a{
+    color: white;
+    font-size: 20pt;
+}
+
+header a:nth-child(4){
+    font-size: 20pt;
+    color:red;
+    font-weight: 25px;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+}
+   
+
+section img{
+    width: 50vw;
+    height: auto;
+
+
+}
